@@ -22,35 +22,34 @@ pinMode(led3,OUTPUT);
 
 void loop() {
 delay(200); 
+  //escojo el led que quiero encender(led1)
 digitalWrite(led1, HIGH);
 digitalWrite(led2, LOW);
 digitalWrite(led3, LOW);
-lcd.print("Led 1 ENCENDIDO");
-lcd.setCursor(0,1);
-delay(2000);
-lcd.clear();
+lcd.print("Led 1 ENCENDIDO"); //imprimo texto
+lcd.setCursor(0,1);//elijo la posicion del texto en el lcd
+delay(2000);//tiempo de encendido led 1.
+lcd.clear(); //borro pantalla
 
 
-  
+    //escojo el led que quiero encender(led2)
 digitalWrite(led1, LOW);
 digitalWrite(led2, HIGH);
 digitalWrite(led3, LOW);
-lcd.print("Led 2 ENCENDIDO");
-lcd.setCursor(0,1);
-delay(1000);
-lcd.clear();
+lcd.print("Led 2 ENCENDIDO");//imprimo texto
+lcd.setCursor(0,1);//elijo la posicion del texto en el lcd
+delay(1000); //tiempo de encendido led 1.
+lcd.clear();//borro pantalla
 
 
-
+//escojo el led que quiero encender(led3)
 digitalWrite(led1, LOW);
 digitalWrite(led2, LOW);
 digitalWrite(led3, HIGH);
-lcd.print("Led 3 ENCENDIDO");
-lcd.setCursor(0,1);
-delay(15000);
-lcd.clear();
-
-
-  
+lcd.print("Led 3 ENCENDIDO"); //imprimo texto
+lcd.setCursor(0,1);//elijo la posicion del texto en el lcd
+delay(15000);//tiempo de encendido led 1.
+lcd.clear();//borro pantalla
+ 
 
 }
